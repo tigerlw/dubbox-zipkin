@@ -1,0 +1,2 @@
+traceProviderFilter=com.ucloudlink.dubbox.zipkin.filter.TraceProviderFilter
+traceConsumerFilter=com.ucloudlink.dubbox.zipkin.filter.TraceConsumerFilter

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd        http://code.alibabatech.com/schema/dubbo        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath:META-INF/application.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="traceConfig" class="com.ucloudlink.dubbox.zipkin.trace.config.TraceConfig">
+	     <property name="enabled" value="${dubbo.trace.enabled}" />
+	     <property name="connectTimeout" value="${dubbo.trace.connectTimeout}" />
+	     <property name="readTimeout" value="${dubbo.trace.readTimeout}" />
+	     <property name="zipkinUrl" value="${dubbo.trace.zipkinUrl}" />
+	     <property name="kafkaServers" value="${dubbo.trace.kafkaServers}" />
+	     <property name="applicationName" value="${spring.application.name}" />
+	     
+	</bean>
+	
+	<bean id="enableTraceAutoConfiguration" class="com.ucloudlink.dubbox.zipkin.trace.config.EnableTraceAutoConfiguration">
+	     <property name="traceConfig" ref="traceConfig" />
+	</bean>
+
+
+
+</beans>
