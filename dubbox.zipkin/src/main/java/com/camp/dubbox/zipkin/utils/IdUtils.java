@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.utils;
+package com.camp.dubbox.zipkin.utils;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;

@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.utils;
+package com.camp.dubbox.zipkin.utils;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

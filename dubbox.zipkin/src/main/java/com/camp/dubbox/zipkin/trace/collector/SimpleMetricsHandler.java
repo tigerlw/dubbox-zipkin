@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.trace.collector;
+package com.camp.dubbox.zipkin.trace.collector;
 
 import com.github.kristofa.brave.SpanCollectorMetricsHandler;
 

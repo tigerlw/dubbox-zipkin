@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.trace.config;
+package com.camp.dubbox.zipkin.trace.config;
 
 
 import javax.annotation.PostConstruct;
@@ -6,7 +6,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.ucloudlink.dubbox.zipkin.context.TraceContext;
+import com.camp.dubbox.zipkin.context.TraceContext;
 
 
 

@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.filter;
+package com.camp.dubbox.zipkin.filter;
 
 import com.alibaba.dubbo.common.extension.Activate;
 import com.alibaba.dubbo.rpc.*;
@@ -8,10 +8,10 @@ import com.twitter.zipkin.gen.Annotation;
 import com.twitter.zipkin.gen.BinaryAnnotation;
 import com.twitter.zipkin.gen.Endpoint;
 import com.twitter.zipkin.gen.Span;
-import com.ucloudlink.dubbox.zipkin.context.TraceContext;
-import com.ucloudlink.dubbox.zipkin.trace.TraceAgent;
-import com.ucloudlink.dubbox.zipkin.utils.IdUtils;
-import com.ucloudlink.dubbox.zipkin.utils.NetworkUtils;
+import com.camp.dubbox.zipkin.context.TraceContext;
+import com.camp.dubbox.zipkin.trace.TraceAgent;
+import com.camp.dubbox.zipkin.utils.IdUtils;
+import com.camp.dubbox.zipkin.utils.NetworkUtils;
 
 import zipkin.Constants;
 

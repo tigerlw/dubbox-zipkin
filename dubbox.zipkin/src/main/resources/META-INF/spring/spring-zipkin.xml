@@ -13,7 +13,7 @@
 		</property>
 	</bean>
 	
-	<bean id="traceConfig" class="com.ucloudlink.dubbox.zipkin.trace.config.TraceConfig">
+	<bean id="traceConfig" class="com.camp.dubbox.zipkin.trace.config.TraceConfig">
 	     <property name="enabled" value="${dubbo.trace.enabled}" />
 	     <property name="connectTimeout" value="${dubbo.trace.connectTimeout}" />
 	     <property name="readTimeout" value="${dubbo.trace.readTimeout}" />
@@ -23,7 +23,7 @@
 	     
 	</bean>
 	
-	<bean id="enableTraceAutoConfiguration" class="com.ucloudlink.dubbox.zipkin.trace.config.EnableTraceAutoConfiguration">
+	<bean id="enableTraceAutoConfiguration" class="com.camp.dubbox.zipkin.trace.config.EnableTraceAutoConfiguration">
 	     <property name="traceConfig" ref="traceConfig" />
 	</bean>
 

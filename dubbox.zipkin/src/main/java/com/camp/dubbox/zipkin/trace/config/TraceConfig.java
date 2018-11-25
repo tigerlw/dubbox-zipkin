@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.trace.config;
+package com.camp.dubbox.zipkin.trace.config;
 
 
 

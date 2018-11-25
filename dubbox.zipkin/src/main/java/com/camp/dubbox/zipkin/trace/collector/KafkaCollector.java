@@ -1,4 +1,4 @@
-package com.ucloudlink.dubbox.zipkin.trace.collector;
+package com.camp.dubbox.zipkin.trace.collector;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -11,7 +11,7 @@ import com.github.kristofa.brave.AbstractSpanCollector;
 import com.github.kristofa.brave.SpanCollectorMetricsHandler;
 
 import com.twitter.zipkin.gen.SpanCodec;
-import com.ucloudlink.dubbox.zipkin.context.TraceContext;
+import com.camp.dubbox.zipkin.context.TraceContext;
 
 public class KafkaCollector extends AbstractSpanCollector
 {

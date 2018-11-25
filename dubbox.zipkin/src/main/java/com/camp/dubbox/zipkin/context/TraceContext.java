@@ -1,8 +1,8 @@
-package com.ucloudlink.dubbox.zipkin.context;
+package com.camp.dubbox.zipkin.context;
 
 
 import com.twitter.zipkin.gen.Span;
-import com.ucloudlink.dubbox.zipkin.trace.config.TraceConfig;
+import com.camp.dubbox.zipkin.trace.config.TraceConfig;
 
 import java.util.ArrayList;
 import java.util.List;

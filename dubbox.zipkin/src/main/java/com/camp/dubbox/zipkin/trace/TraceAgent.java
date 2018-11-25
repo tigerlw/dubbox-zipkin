@@ -1,13 +1,13 @@
-package com.ucloudlink.dubbox.zipkin.trace;
+package com.camp.dubbox.zipkin.trace;
 
 import com.github.kristofa.brave.AbstractSpanCollector;
 import com.github.kristofa.brave.SpanCollectorMetricsHandler;
 
 import com.twitter.zipkin.gen.Span;
 import com.twitter.zipkin.gen.SpanCodec;
-import com.ucloudlink.dubbox.zipkin.context.TraceContext;
-import com.ucloudlink.dubbox.zipkin.trace.collector.KafkaCollector;
-import com.ucloudlink.dubbox.zipkin.trace.collector.SimpleMetricsHandler;
+import com.camp.dubbox.zipkin.context.TraceContext;
+import com.camp.dubbox.zipkin.trace.collector.KafkaCollector;
+import com.camp.dubbox.zipkin.trace.collector.SimpleMetricsHandler;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
